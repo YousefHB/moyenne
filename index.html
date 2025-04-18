@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul de Moyenne - Premier Semestre</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calcul de Moyenne - Premier Semestre</h1>
+        
+        <div class="module">
+            <h2>Module Mathématique</h2>
+            <div class="matiere">
+                <h3>Math d'ing (Coeff 2)</h3>
+                <label>DS (30%): <input type="number" id="math_ing_ds" min="0" max="20" step="0.01"></label>
+                <label>Examen (70%): <input type="number" id="math_ing_exam" min="0" max="20" step="0.01"></label>
+            </div>
+            <div class="matiere">
+                <h3>Probabilité (Coeff 2)</h3>
+                <label>DS (30%): <input type="number" id="prob_ds" min="0" max="20" step="0.01"></label>
+                <label>Examen (70%): <input type="number" id="prob_exam" min="0" max="20" step="0.01"></label>
+            </div>
+        </div>
+
+        <div class="module">
+            <h2>Module Programmation</h2>
+            <div class="matiere">
+                <h3>Base de données (Coeff 3)</h3>
+                <label>DS (30%): <input type="number" id="bd_ds" min="0" max="20" step="0.01"></label>
+                <label>Examen (70%): <input type="number" id="bd_exam" min="0" max="20" step="0.01"></label>
+            </div>
+            <div class="matiere">
+                <h3>Langage C (Coeff 3)</h3>
+                <label>DS (30%): <input type="number" id="c_ds" min="0" max="20" step="0.01"></label>
+                <label>Examen (70%): <input type="number" id="c_exam" min="0" max="20" step="0.01"></label>
+            </div>
+            <div class="matiere">
+                <h3>Python (Coeff 3)</h3>
+                <label>DS (30%): <input type="number" id="python_ds" min="0" max="20" step="0.01"></label>
+                <label>Examen (70%): <input type="number" id="python_exam" min="0" max="20" step="0.01"></label>
+            </div>
+            <div class="matiere">
+                <h3>Web (Coeff 2)</h3>
+                <label>DS (30%): <input type="number" id="web_ds" min="0" max="20" step="0.01"></label>
+                <label>Examen (70%): <input type="number" id="web_exam" min="0" max="20" step="0.01"></label>
+            </div>
+        </div>
+
+        <div class="module">
+            <h2>Module Concept de Base de Système</h2>
+            <div class="matiere">
+                <h3>Système d'exploitation (Coeff 3)</h3>
+                <label>DS (30%): <input type="number" id="sys_ds" min="0" max="20" step="0.01"></label>
+                <label>Examen (70%): <input type="number" id="sys_exam" min="0" max="20" step="0.01"></label>
+            </div>
+            <div class="matiere">
+                <h3>Transmission (Coeff 2)</h3>
+                <label>DS (30%): <input type="number" id="trans_ds" min="0" max="20" step="0.01"></label>
+                <label>Examen (70%): <input type="number" id="trans_exam" min="0" max="20" step="0.01"></label>
+            </div>
+        </div>
+
+        <div class="module">
+            <h2>Module Architecture Système</h2>
+            <div class="matiere">
+                <h3>Architecture ordinateur (Coeff 2)</h3>
+                <label>DS (30%): <input type="number" id="arch_ds" min="0" max="20" step="0.01"></label>
+                <label>Examen (70%): <input type="number" id="arch_exam" min="0" max="20" step="0.01"></label>
+            </div>
+            <div class="matiere">
+                <h3>Système logique (Coeff 2)</h3>
+                <label>DS (30%): <input type="number" id="log_ds" min="0" max="20" step="0.01"></label>
+                <label>Examen (70%): <input type="number" id="log_exam" min="0" max="20" step="0.01"></label>
+            </div>
+        </div>
+
+        <div class="module">
+            <h2>Module Divers</h2>
+            <div class="matiere">
+                <h3>Français (Coeff 3)</h3>
+                <label>DS (30%): <input type="number" id="fr_ds" min="0" max="20" step="0.01"></label>
+                <label>Examen (70%): <input type="number" id="fr_exam" min="0" max="20" step="0.01"></label>
+            </div>
+            <div class="matiere">
+                <h3>Comptabilité (Coeff 1)</h3>
+                <label>DS (30%): <input type="number" id="compta_ds" min="0" max="20" step="0.01"></label>
+                <label>Examen (70%): <input type="number" id="compta_exam" min="0" max="20" step="0.01"></label>
+            </div>
+        </div>
+
+        <button id="calculer">Calculer la Moyenne</button>
+
+        <div id="resultats">
+            <h2>Résultats</h2>
+            <div id="moyennes-modules"></div>
+            <div id="moyenne-generale"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
